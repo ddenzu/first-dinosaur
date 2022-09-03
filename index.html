@@ -3,61 +3,59 @@
 <head>
     <title>DINOSAUR</title>
     <meta charset="utf-8">
-    <style>
-        a {
-            color:black;
-            text-align:center
-        }
-        h1 {
-           font-size:50px;
-           text-align:center
-        }
-        h2 {
-            font-size:30px;
-            text-align:center
-        }
-        p {
-            text-align:center
-        }
-        div {
-            text-align:center
-        }
-        ul {
-            width: 180px;
-            margin-left: auto;
-            margin-right: auto;
-
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <input type="button" value="dark" onclick="
+    var target = document.querySelector('body');
+    if(this.value === 'dark'){
+        target.style.background = 'black';
+        target.style.color='white';
+        this.value = 'white'
+
+        var alist = document.querySelectorAll('a');
+        var i = 0;
+        while(i < alist.length){
+            alist[i].style.color = 'powderblue';
+            i = i + 1;
+        }
+    } else {
+        target.style.background = 'white';
+        target.style.color='black';
+        this.value = 'dark'
+       
+        var alist = document.querySelectorAll('a');
+        var i = 0;
+        while(i < alist.length){
+            alist[i].style.color = 'blue';
+            i = i + 1;
+    }
+}
+">        
     <h1 style="color:greenyellow">DINOSAUR</h1>
-    <div>
-        <img src="asdf.png" width="10%">
+
+    <div id="grid">
+        <ul>
+            <img src="asdf.png" width="70%"><br><br>
+            <li><a href="studing_dinosaur.html">Studing Dinosaur</a></li>
+            <li><a href="birthday_dinosaur.html">Birthday Dinosaur</a></li>
+            <li><a href="surprised_dinosaur.html">Surprised Dinosaur</a></li>
+
+        </ul>
+        <div id="article">
+            <h2>What is a dinosaurs</h2>
+                <p><strong>Dinosaurs</strong> are a diverse group of <a href="https://en.wikipedia.org/wiki/Reptile" 
+                target="_blank" title="파충류">reptiles</a> of the clade Dinosauria.<br>
+                They first appeared during the <a href="https://en.wikipedia.org/wiki/Triassic" target="_blank" title="트라이아스기">
+                Triassic</a> period, between 243 and 233.23 million years ago (mya), 
+                although the exact origin and timing of the evolution of dinosaurs is the subject of active research.<br>
+                They became the dominant terrestrial vertebrates after the Triassic Jurassic extinction event 201.3 mya; 
+                their dominance continued throughout the Jurassic and Cretaceous periods.<br> The fossil record shows
+                that birds are feathered dinosaurs, having evolved from earlier theropods during the Late Jurassic epoch,<br>
+                and are the only dinosaur lineage known to have survived the Cretaceous Paleogene extinction event approximately 66 mya.<br>
+                Dinosaurs can therefore be divided into avian dinosaurs birds and paraphyletic pseudo-extinct non-avian dinosaurs,
+                which are all dinosaurs other than birds.</p>
+            </div>
     </div>
-    <ul>
-        <li><a href="studing_dinosaur.html">Studing Dinosaur</a></li>
-        <li><a href="birthday_dinosaur.html">Birthday Dinosaur</a></li>
-        <li><a href="surprised_dinosaur.html">Surprised Dinosaur</a></li>
-    </ul>
-    <!--
-    <ol>
-        <li><a href="studing_dinosaur.html">Studing Dinosaur</a></li>
-        <li><a href="birthday_dinosaur.html">Birthday Dinosaur</a></li>
-        <li><a href="surprised_dinosaur.html">Surprised Dinosaur</a></li>
-    </ol>
-    -->
-    <h2>What is a dinosaurs</h2>
-    <p><strong><u>Dinosaurs</u></strong> are a diverse group of <a href="https://en.wikipedia.org/wiki/Reptile" 
-        target="_blank" title="파충류">reptiles</a> of the clade Dinosauria.<br>
-        They first appeared during the <a href="https://en.wikipedia.org/wiki/Triassic target="_blank title="트라이아스기">
-        Triassic</a> period, between 243 and 233.23 million years ago (mya), 
-        although the exact origin and timing of the evolution of dinosaurs is the subject of active research.<br>
-        They became the dominant terrestrial vertebrates after the Triassic Jurassic extinction event 201.3 mya; 
-        their dominance continued throughout the Jurassic and Cretaceous periods.<br> The fossil record shows
-        that birds are feathered dinosaurs, having evolved from earlier theropods during the Late Jurassic epoch,<br>
-        and are the only dinosaur lineage known to have survived the Cretaceous Paleogene extinction event approximately 66 mya.<br>
-        Dinosaurs can therefore be divided into avian dinosaurs birds and paraphyletic pseudo-extinct non-avian dinosaurs,
-        which are all dinosaurs other than birds.</p>
 </body>
 </html>

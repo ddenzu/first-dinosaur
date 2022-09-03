@@ -1,0 +1,42 @@
+
+a {
+    color:green;
+    text-align:center
+}
+h1 {
+   font-size:50px;
+   text-align:center;
+   border-bottom:1px solid gray;
+   padding:20px;
+   margin:0;
+}
+h2 {
+    font-size:30px;
+}
+ul{
+    border-right:1px solid gray;
+    width:150px;
+    margin:0;
+    padding:20px;
+    padding-left:33px;
+}
+#grid{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+}
+#article{
+    padding-left:80px;
+}
+@media(max-width:650px){
+    #grid{ 
+    display: block;
+    }
+    ul{
+        border-right:none;
+        margin-left:150px;
+    }
+    h1{
+        border-bottom:none;
+    }
+}
+
