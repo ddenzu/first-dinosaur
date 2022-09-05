@@ -4,39 +4,10 @@
     <title>DINOSAUR</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
-    <script>
-    function LinksetColor(color){
-        var alist = document.querySelectorAll('a');
-        var i = 0;
-        while(i < alist.length){
-            alist[i].style.color =color;
-            i = i + 1;
-        }
-    }
-    function BodysetColor(color){
-        document.querySelector('body').style.color=color;
-    }
-    function Bodysetbackgroundcolor(color){
-        document.querySelector('body').style.background = color
-    }
-    function nightDayHandler(self){
-        var target = document.querySelector('body');
-        if(self.value === 'dark'){
-            Bodysetbackgroundcolor('rgb(27,26,26)');
-            BodysetColor('white');
-            self.value = 'white';
-            LinksetColor('powderblue');
-        } else {
-            Bodysetbackgroundcolor('white')
-            BodysetColor('black');
-            self.value = 'dark';       
-            LinksetColor('blue');
-        }
-    }
-    </script>
+    <script src="color.js"></script>
 </head>
 <body>
-    <input type="button" value="dark" onclick="nightDayHandler(this);">        
+    <input type="button" value="dark" onclick="nightDayHandler(this)">        
     <h1 style="color:greenyellow">DINOSAUR</h1>
 
     <div id="grid">
