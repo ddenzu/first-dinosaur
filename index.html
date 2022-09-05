@@ -4,34 +4,37 @@
     <title>DINOSAUR</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
+    <script>
+    function nightDayHandler(self){
+        var target = document.querySelector('body');
+        if(self.value === 'dark'){
+            target.style.background = 'rgb(27,26,26)';
+            target.style.color='white';
+            self.value = 'white'
+
+            var alist = document.querySelectorAll('a');
+            var i = 0;
+            while(i < alist.length){
+                alist[i].style.color = 'powderblue';
+                i = i + 1;
+            }
+        } else {
+            target.style.background = 'white';
+            target.style.color='black';
+            self.value = 'dark'
+        
+            var alist = document.querySelectorAll('a');
+            var i = 0;
+            while(i < alist.length){
+                alist[i].style.color = 'blue';
+                i = i + 1;
+            }
+        }
+    }
+    </script>
 </head>
 <body>
-    <input type="button" value="dark" onclick="
-    var target = document.querySelector('body');
-    if(this.value === 'dark'){
-        target.style.background = 'black';
-        target.style.color='white';
-        this.value = 'white'
-
-        var alist = document.querySelectorAll('a');
-        var i = 0;
-        while(i < alist.length){
-            alist[i].style.color = 'powderblue';
-            i = i + 1;
-        }
-    } else {
-        target.style.background = 'white';
-        target.style.color='black';
-        this.value = 'dark'
-       
-        var alist = document.querySelectorAll('a');
-        var i = 0;
-        while(i < alist.length){
-            alist[i].style.color = 'blue';
-            i = i + 1;
-    }
-}
-">        
+    <input type="button" value="dark" onclick="nightDayHandler(this);">        
     <h1 style="color:greenyellow">DINOSAUR</h1>
 
     <div id="grid">
@@ -56,6 +59,9 @@
                 Dinosaurs can therefore be divided into avian dinosaurs birds and paraphyletic pseudo-extinct non-avian dinosaurs,
                 which are all dinosaurs other than birds.</p>
             </div>
+    </div>
+    <div id="you">
+        <a href="https://www.youtube.com/watch?v=8Oz7DG76ibY" target="_blank">DINISAUR MV</a>
     </div>
 </body>
 </html>
