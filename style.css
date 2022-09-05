@@ -6,15 +6,18 @@ a {
 h1 {
    font-size:50px;
    text-align:center;
-   border-bottom:1px solid gray;
+   border-bottom:2.5px solid gray;
    padding:20px;
    margin:0;
+}
+#you{
+    text-align: center;;
 }
 h2 {
     font-size:30px;
 }
 ul{
-    border-right:1px solid gray;
+    border-right:2.5px solid gray;
     width:150px;
     margin:0;
     padding:20px;
